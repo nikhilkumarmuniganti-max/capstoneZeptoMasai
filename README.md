@@ -128,3 +128,5 @@ Full details are in [`data_pipeline/README.md`](data_pipeline/README.md).
   top-chunk cosine similarity, or 1.0 for the canned general reply), served by FastAPI `POST /ask`.
 - **Docker:** the image uses `python:3.12-slim`, CPU-only torch and a non-root user. The model is downloaded
   and the index built at build time, so the container runs offline on port 7860.
+
+  finalized
