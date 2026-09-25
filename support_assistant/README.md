@@ -229,3 +229,5 @@ ALL CHECKS PASSED
   contacts Hugging Face. ChromaDB runs with telemetry disabled.
 - **`truststore`** makes the one-time model download verify HTTPS against the OS certificate store. This was
   needed on the development machine, where antivirus software re-signs HTTPS traffic.
+
+  Docker was not installed on the development machine, so `docker build` was not executed there. As per the time of interest and constraint

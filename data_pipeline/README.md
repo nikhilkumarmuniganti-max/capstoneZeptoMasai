@@ -137,3 +137,6 @@ not produce a stable top 5.
   therefore uses [`truststore`](https://pypi.org/project/truststore/) to verify certificates against the
   operating system's store. Certificate verification stays **on**. On machines without such software,
   this changes nothing.
+
+
+  Data is taken from  106 books

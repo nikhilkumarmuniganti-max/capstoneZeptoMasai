@@ -465,4 +465,7 @@ pipe = joblib.load("models/titanic_survival_pipeline.joblib")
 raw = pd.DataFrame([{"pclass": 3, "age": None, "sibsp": 0, "parch": 0, "fare": 7.25,
                      "sex": "male", "embarked": "S"}])
 pipe.predict(raw), pipe.predict_proba(raw)[:, 1]
+
+
+interpretations are given  on  ReadME docs and each  section , but not plots
 ```
