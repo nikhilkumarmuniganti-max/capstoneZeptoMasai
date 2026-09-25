@@ -1,0 +1,5 @@
+# Module 1 - data_pipeline
+requests
+beautifulsoup4
+truststore      # verify HTTPS against the OS certificate store (see README "Environment notes")
+pandas==2.3.3   # pinned: newer compiled wheels are blocked by Windows Smart App Control

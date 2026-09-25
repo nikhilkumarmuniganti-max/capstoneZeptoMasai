@@ -1,0 +1,16 @@
+# Module 3 - support_assistant
+# CPU-only PyTorch wheels (smaller download, no GPU needed for MiniLM embeddings)
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# torch / regex are pinned: newer compiled wheels are blocked by Windows 11
+# Smart App Control on the development machine; these versions load.
+torch==2.9.1
+regex==2025.11.3
+sentence-transformers
+chromadb
+langgraph
+pydantic
+requests        # only used by the optional MOCK_LLM=0 Groq client
+fastapi
+uvicorn
+truststore      # verify HTTPS (model download) against the OS certificate store

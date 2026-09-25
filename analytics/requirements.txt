@@ -1,0 +1,13 @@
+# Module 2 - analytics
+# scipy / scikit-learn / pandas are pinned: newer compiled wheels are blocked by
+# Windows 11 Smart App Control on the development machine; these versions load.
+pandas==2.3.3
+numpy
+scipy==1.16.3
+matplotlib
+seaborn
+scikit-learn==1.7.2
+imbalanced-learn
+joblib
+jupyter
+truststore      # verify HTTPS (seaborn dataset download) against the OS certificate store
