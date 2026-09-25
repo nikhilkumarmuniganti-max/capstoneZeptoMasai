@@ -30,13 +30,29 @@ pip install -r data_pipeline/requirements.txt -r analytics/requirements.txt -r s
 
 ## How to run each module
 
+
+
 ### 1. Data pipeline
 
-_Coming next._
+```bash
+cd data_pipeline
+python run_pipeline.py                # scrape -> clean -> SQLite -> queries
+python run_pipeline.py --skip-scrape  # offline: reuse the committed raw CSV
+```
+
+Results are written to [`data_pipeline/outputs/query_results.md`](data_pipeline/outputs/query_results.md).
 
 ### 2. Analytics
 
-_Coming next._
+```bash
+cd analytics
+jupyter nbconvert --to notebook --execute --inplace 01_eda.ipynb       # loads Titanic once, saves titanic.csv
+jupyter nbconvert --to notebook --execute --inplace 02_modeling.ipynb  # reads titanic.csv, trains, saves model
+```
+
+Run them in this order, or open them in Jupyter and choose "Run All". Both notebooks are committed with their
+outputs, and every written interpretation, the model comparison table and the recommendation are in
+[`analytics/README.md`](analytics/README.md).
 
 ### 3. Support assistant
 
